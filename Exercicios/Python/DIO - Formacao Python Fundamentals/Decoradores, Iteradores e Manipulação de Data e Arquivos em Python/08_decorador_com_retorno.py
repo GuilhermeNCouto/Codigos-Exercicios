@@ -3,17 +3,22 @@ O decorador pode decidir se retorna o valor da função decorada ou não. Para q
 a função envelope deve retornar o valor da função decorada.
 '''
 
-def duplicar_com_retorno(func): 
-    def envelope(*args, **kwargs): 
-        func(*args, **kwargs)  # Chama a função original
-        return func(*args, **kwargs)  # Retorna o resultado duplicado
+def meu_decorador(funcao):
+    def envelope(*args, **kwargs):
+        print("Faz algo antes da execução da função.")
+        resultado = funcao(*args, **kwargs) # Chama a função original e armazena o resultado
+        print("Faz algo depois da execução da função.")
+        return resultado # Retorna o valor da função decorada
     
-    return envelope
+    return envelope # Retorna a função interna
 
-@duplicar_com_retorno
-def aprender_com_retorno(tecnologia): 
-    print(f'Estou aprendendo {tecnologia}!')
-    return tecnologia.upper()
+@meu_decorador # Usando o decorador com a sintaxe @
+def ola(nome):
+    print(f"Olá, {nome}!")
+    return nome.upper()  # Retorna o nome em maiúsculas
 
-tecnologia = aprender_com_retorno('Python')
-print(tecnologia)  # Saída: PYTHON
+
+ola1 = ola("Alice")  # Chama a função decorada
+print(ola1)         # Imprime o valor retornado pela função decorada
+ola2 = ola("Bob")    # Chama a função decorada novamente
+print(ola2)         # Imprime o valor retornado pela função decorada

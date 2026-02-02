@@ -15,4 +15,5 @@ def meu_decorador(funcao): # Decorador simples
 def ola_mundo():
     print("Olá, mundo!")
 
+
 ola_mundo()  # Chama a função decorada
