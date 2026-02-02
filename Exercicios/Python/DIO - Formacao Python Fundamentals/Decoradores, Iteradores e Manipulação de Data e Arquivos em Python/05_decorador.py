@@ -16,4 +16,3 @@ def ola_mundo():
 
 ola_mundo_decorado = meu_decorador(ola_mundo)
 ola_mundo_decorado()
-

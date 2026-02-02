@@ -15,3 +15,5 @@ def pai():
     filho2()
 
 pai()
+
+#filho1() # gera erro, pois a função filho1 não está no escopo global
