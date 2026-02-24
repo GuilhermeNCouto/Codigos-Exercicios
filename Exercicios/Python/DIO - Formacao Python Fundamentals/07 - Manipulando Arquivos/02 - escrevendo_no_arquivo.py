@@ -1,0 +1,6 @@
+arquivo = open('/workspaces/Codigos-Exercicios/Exercicios/Python/DIO - Formacao Python Fundamentals/07 - Manipulando Arquivos/example.txt', 'w')
+arquivo.write('Olá, este é um exemplo de escrita em um arquivo.\n')
+arquivo.write('Podemos escrever várias linhas usando o método write.\n')
+arquivo.write('Lembre-se de fechar o arquivo após terminar de escrever.')
+arquivo.writelines(['\nEsta é outra linha adicionada usando writelines.\n','E esta é mais uma linha.'])
+arquivo.close()

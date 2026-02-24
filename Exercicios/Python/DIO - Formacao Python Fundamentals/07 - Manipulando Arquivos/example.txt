@@ -1,0 +1,5 @@
+Olá, este é um exemplo de escrita em um arquivo.
+Podemos escrever várias linhas usando o método write.
+Lembre-se de fechar o arquivo após terminar de escrever.
+Esta é outra linha adicionada usando writelines.
+E esta é mais uma linha.
