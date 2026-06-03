@@ -1,0 +1,5 @@
+[2026-06-03 23:15:05] Função criar_cliente executada com argumentos ([<!PessoaFisica: (1)>],) e {}. Retornou None
+[2026-06-03 23:15:38] Função criar_conta executada com argumentos (1, [<!PessoaFisica: (1)>], [<ContaCorrente: (0001, 1, Gui>]) e {}. Retornou None
+[2026-06-03 23:15:43] Função depositar executada com argumentos ([<!PessoaFisica: (1)>],) e {}. Retornou None
+[2026-06-03 23:15:53] Função sacar executada com argumentos ([<!PessoaFisica: (1)>],) e {}. Retornou None
+[2026-06-03 23:15:56] Função exibir_extrato executada com argumentos ([<!PessoaFisica: (1)>],) e {}. Retornou None
