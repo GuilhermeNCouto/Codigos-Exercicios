@@ -3,3 +3,4 @@
 [2026-06-03 23:15:43] Função depositar executada com argumentos ([<!PessoaFisica: (1)>],) e {}. Retornou None
 [2026-06-03 23:15:53] Função sacar executada com argumentos ([<!PessoaFisica: (1)>],) e {}. Retornou None
 [2026-06-03 23:15:56] Função exibir_extrato executada com argumentos ([<!PessoaFisica: (1)>],) e {}. Retornou None
+[2026-06-26 18:42:09] Função criar_cliente executada com argumentos ([<!PessoaFisica: (123)>],) e {}. Retornou None
