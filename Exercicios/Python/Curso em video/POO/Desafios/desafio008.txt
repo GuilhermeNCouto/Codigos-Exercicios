@@ -1,0 +1,11 @@
+Posso desenvolver várias funções que dependam uma da outra ao
+mesmo tempo se o planejamento for seguido.
+
+Qual destas características melhor se encaixa no exemplo acima?
+
+A) Oportuno
+B) Reutilizável
+C) Confiável
+D) Manutenível
+
+Resposta: A

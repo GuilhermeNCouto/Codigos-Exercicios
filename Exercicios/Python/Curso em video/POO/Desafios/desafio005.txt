@@ -1,0 +1,8 @@
+Na sigla OOAD, as últimas duas letras significam...
+
+A) Algol / Dashboard
+B) Algorithms / Digital
+C) Analytics / Default
+D) Analysis / Design
+
+Resposta: D

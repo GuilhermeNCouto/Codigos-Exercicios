@@ -1,0 +1,11 @@
+O código fica muito simples de ler e de compreender, já que não
+preciso saber os detalhes de funcionamento ao programar.
+
+Qual destas características melhor se encaixa no exemplo acima?
+
+A) Natural
+B) Extensível
+C) Manutenível
+D) Oportuno
+
+Resposta: A

@@ -1,0 +1,8 @@
+Quem foi o criador da "Smalltalk", uma das primeiras linguagens OO?
+
+A) Edsger Dijkstra
+B) Guido Van Rossum
+C) Alan Kay
+D) Kristen Nygaard
+
+Resposta: C

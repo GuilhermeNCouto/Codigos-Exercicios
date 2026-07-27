@@ -1,0 +1,11 @@
+Se precisar adicionar uma nova funcionalidade ao sistema, consigo
+fazer isso com grande facilidade.
+
+Qual destas características melhor se encaixa no exemplo acima?
+
+A) Confiável
+B) Extensível
+C) Reutilizável
+D) Oportuno
+
+Resposta: B

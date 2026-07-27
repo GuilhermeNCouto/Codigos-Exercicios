@@ -1,0 +1,8 @@
+A linguagem "Simula" foi um superconjunto de que outra linguagem?
+
+A) ALGOL
+B) C
+C) Smalltalk
+D) Python
+
+Resposta: A

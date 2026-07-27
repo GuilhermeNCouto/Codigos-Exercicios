@@ -1,0 +1,11 @@
+Posso alterar como uma funcionalidade trabalha e tudo continua
+funcionando como antes.
+
+Qual destas características melhor se encaixa no exemplo acima?
+
+A) Oportuno
+B) Reutilizável
+C) Confiável
+D) Natural
+
+Resposta: C

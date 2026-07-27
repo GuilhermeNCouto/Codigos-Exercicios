@@ -1,0 +1,9 @@
+Na teoria de OO, o termo usado para o ato de fazer um objeto
+existir, a partir de um modelo se chama:
+
+A) Instanciar
+B) CLassificar
+C) Objetificar
+D) Forjar
+
+Resposta: A

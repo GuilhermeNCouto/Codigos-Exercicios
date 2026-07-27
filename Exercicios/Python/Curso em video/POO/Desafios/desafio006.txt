@@ -1,0 +1,11 @@
+Criei um sistema para Escola, ao criar outro sistema para Academia,
+parte do trabalho ja estará feita, pois tenho Alunos nos dois.
+
+Qual destas características melhor se encaixa no exemplo acima?
+
+A) Confiável
+B) Natural
+C) Manutenível
+D) Reutilizável
+
+Resposta: D
