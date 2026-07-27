@@ -1,0 +1,15 @@
+Coloque a estrutura de dois objetos, sendo um concreto e outro abstrato.
+Inclua também seus principais atributos, métodos e crie um exemplo de
+estado para cada um deles:
+
+Resposta:
+
+Objeto concreto: Camiseta
+Atributos: número_cordas, quantidade_trastes, modelo, espessura_cordas
+Métodos: afinar, tocar, alterar_volume, alterar_captador
+Estado: guitarra1 = {número_cordas : 6, quantidade_trastes : 22, modelo : 'Stratocaster', espessura_cordas : 010}
+
+Objeto abstrato: Playlist
+Atributos: duração, quantidade_musicas, link_playlist, musicas, dono_playlist
+Métodos: adicionar_musica, remover_musica, compartilhar, ordernar_musicas
+Estado playlist1 = {duração : '15 minutos', quantidade_musicas 3, link_playlist : 'https://playlist.com',musicas : 'musica1, musica2, musica3, dono_playlist : 'Guilherme'}
