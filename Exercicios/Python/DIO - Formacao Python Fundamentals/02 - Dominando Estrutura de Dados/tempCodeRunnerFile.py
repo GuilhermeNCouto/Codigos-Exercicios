@@ -1,0 +1,2 @@
+
+    resultado = soma_tupla(

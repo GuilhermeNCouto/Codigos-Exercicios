@@ -6,7 +6,7 @@ class ContaBancaria:
     Cria uma conta bancária e permite fazer saques e depósitos.
     """
 
-    def __init__(self, id, nome, saldo = 0):
+    def __init__(self, id, nome, saldo = 0, nacionalidade = 'BR'):
         self.id = id
         self.titular = nome
         self.saldo = saldo
@@ -21,6 +21,11 @@ class ContaBancaria:
         print(f"\n{linha}\n{titulo}\n{linha}\n{'ID':<15} | {str(self.id):>20}\n{'Titular':<15} | {self.titular:>20}\n{'Saldo':<15} | {f'R$ {self.saldo:,.2f}':>20}\n{linha}\n")
 
     def depositar(self, valor):
+        '''
+        Classe que deposita na conta
+        :param valor: Valor a ser depositado
+        :type valor: float
+        '''
         self.saldo += valor
         linha = "-" * 40
         titulo = 'Depósito realizado'.center(40)
@@ -42,4 +47,8 @@ class ContaBancaria:
 
 
 conta1 = ContaBancaria(111, "José", 500)
-inspect(conta1)
+#inspect(conta1, all=True, methods=True, help=True)
+inspect(ContaBancaria, all=True, methods=True, help=True)
+print(ContaBancaria.__dict__)
+
+inspect(inspect)

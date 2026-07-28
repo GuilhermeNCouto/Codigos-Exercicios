@@ -5,7 +5,7 @@ class Foo:
     @property
     def x(self):
         return self._x or 0
-
+    
     @x.setter
     def x(self, value):
         # Se o usuário passar None ou 0, podemos interpretar como um reset

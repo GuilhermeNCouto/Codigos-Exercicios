@@ -39,3 +39,9 @@ except AttributeError:
 
 # 3. O jeito certo: Via método público
 print(f"Saldo atual: {conta.mostrar_saldo()}")
+
+conta.depositar(50)
+print(f"Saldo após depósito: {conta.mostrar_saldo()}")
+
+conta.sacar(30)
+print(f"Saldo após saque: {conta.mostrar_saldo()}")

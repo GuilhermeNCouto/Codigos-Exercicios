@@ -21,7 +21,7 @@ class Gamer:
         lista_jogos = "\n".join(f":video_game: [blue]{jogo}[/]" for jogo in self.favoritos)
         
         conteudo = (
-            f"Nome real: [black on blue]{self.nome}[/]\n"
+            f"Nome real: [bold black on blue]{self.nome}[/]\n"
             f"Jogos Favoritos:\n{lista_jogos}"
         )
         

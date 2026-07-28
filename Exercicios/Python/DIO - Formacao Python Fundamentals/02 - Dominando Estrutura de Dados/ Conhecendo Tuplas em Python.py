@@ -6,7 +6,7 @@ def soma_tupla(tupla):
 if __name__ == "__main__":
     entrada = input()
     # Defina tupla para receber os números inteiros:
-    elementos = tuple(map(int, entrada.split()))
+    elementos = tuple(int,map( entrada.split()))
     
     resultado = soma_tupla(elementos)
     print(f"A soma dos elementos da tupla é: {resultado}")

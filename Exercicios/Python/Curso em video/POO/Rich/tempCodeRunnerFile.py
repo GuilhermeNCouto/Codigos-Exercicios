@@ -1,1 +1,1 @@
-dth=35
+  return f"Conta {self.id} - {self.titular}"
