@@ -24,23 +24,24 @@ class Churrasco:
         return f"Este é o churrasco {self.nome} com {self.num_pessoas} convidados."
 
 
-    def analisar(self):
-        # Calcular a quantidade total de carne necessária
-        carne_necessaria = self.num_pessoas * self.__class__.consumo_padrao / 1000  # convertendo para kg
-        
-        # Calcular o custo total do churrasco
-        custo_total = carne_necessaria * self.__class__.preco_kg
+    def calcular_atd_carne(self) -> float:
+        return self.num_pessoas * self.__class__.consumo_padrao / 1000  # convertendo para kg
 
-        # Calcular o preço por pessoa
-        preco_por_pessoa = custo_total / self.num_pessoas
+    def calcular_custo_total(self) -> float:
+        return self.calcular_atd_carne() * self.__class__.preco_kg
+
+    def calcular_custo_individual(self) -> float:
+        return self.calcular_custo_total() / self.num_pessoas
+    
+    def analisar(self):
 
         # Exibir os resultados
         conteudo = (
             f"Analisando [green]{self.nome}[/] com [blue]{self.num_pessoas} convidados[/]\n"
             f"Cada participante comera {self.__class__.consumo_padrao}g e cada Kg custa R$ {self.__class__.preco_kg:,.2f}\n"
-            f"Recomendo [blue]comprar {carne_necessaria:,.2f}[/]kg de carne\n"
-            f"O custo total será de [green]R$ {custo_total:,.2f}[/]\n"
-            f"Cada pessoa pagará [yellow]R$ {preco_por_pessoa:,.2f}[/] para participar."
+            f"Recomendo [blue]comprar {self.calcular_atd_carne():,.2f}[/]kg de carne\n"
+            f"O custo total será de [green]R$ {self.calcular_custo_total():,.2f}[/]\n"
+            f"Cada pessoa pagará [yellow]R$ {self.calcular_custo_individual():,.2f}[/] para participar."
         )
 
         painel = Panel(conteudo, title="Análise do Churrasco", width=60)
