@@ -1,3 +1,7 @@
+'''
+Crie a classe Produto, onde podemos cadastrar nome e preço.
+Crie também um método que mostre a etiqueta do produto com o nome centralizado e o preço formatado.
+'''
 from rich import print
 from rich.panel import Panel
 
@@ -7,16 +11,15 @@ class Produto:
         self.preco = preco
 
     def etiqueta(self):
-        # Formatando o preço no padrão clássico antes de aplicar os pontos
-        p_str = f"R$ {self.preco:,.2f}"
         
-        conteudo = (
-            f"{self.nome:^36}\n"
-            f"{'-' * 36}\n"
-            f"{p_str:.^36}"
-        )
+        conteudo = f"{self.nome.center(30, ' ')}"
+        conteudo += f"{'-' * 30}"
+        precoFormatado = f"R$ {self.preco:,.2f}"
+        # Adiciona o sinal de "R$" e formata o preço
+        conteudo += f"{precoFormatado.center(30, '.')}"
         
-        print(Panel(conteudo, title="Produto", width=40))
+        etiqueta = Panel(conteudo, title="Produto", width=34)
+        print(etiqueta)
 
 # Testando a classe
 p1 = Produto("Notebook", 2500.00)

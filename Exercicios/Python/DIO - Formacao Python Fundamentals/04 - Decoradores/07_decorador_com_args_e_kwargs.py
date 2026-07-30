@@ -19,7 +19,7 @@ def meu_decorador(funcao): # Decorador simples
 @meu_decorador # Usando o decorador com a sintaxe @
 def ola(nome):
     print(f"Olá, {nome}!")
-
+    
 
 ola("Alice")  # Chama a função decorada
 ola("Bob")    # Chama a função decorada novamente
