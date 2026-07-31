@@ -11,17 +11,18 @@ class Gamer:
     def __init__(self, nome, nick):
         self.nome = nome
         self.nick = nick
-        self.favoritos = []
+        self.favoritos = list()
 
     def add_favoritos(self, jogo):
         self.favoritos.append(jogo)
+        self.favoritos.sort(key=str.lower)  # Ordena a lista de jogos favoritos em ordem alfabética, ignorando maiúsculas e minúsculas
 
     def ficha(self):
         # Lista de jogos com o controle e o nome em azul
         lista_jogos = "\n".join(f":video_game: [blue]{jogo}[/]" for jogo in self.favoritos)
         
         conteudo = (
-            f"Nome real: [bold black on blue]{self.nome}[/]\n"
+            f"Nome real:[bold black on blue] {self.nome} [/]\n"
             f"Jogos Favoritos:\n{lista_jogos}"
         )
         
