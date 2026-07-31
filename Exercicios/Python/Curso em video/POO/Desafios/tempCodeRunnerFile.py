@@ -1,5 +1,0 @@
-f"Analisando [green]{self.nome}[/] com [blue]{self.num_pessoas} convidados[/]\n"
-            f"Cada participante comera {self.__class__.consumo_padrao}g e cada Kg custa R$ {self.__class__.preco_kg:,.2f}\n"
-            f"Recomendo [blue]comprar {carne_necessaria:,.2f}[/]kg de carne\n"
-            f"O custo total será de [green]R$ {custo_total:,.2f}[/]\n"
-            f"Cada pessoa pagará [yellow]R$ {preco_por_pessoa:,.2f}[/] para participar."
