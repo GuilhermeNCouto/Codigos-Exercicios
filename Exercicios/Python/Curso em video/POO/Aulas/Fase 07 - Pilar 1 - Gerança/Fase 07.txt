@@ -3,3 +3,12 @@ Herança
 É um relacionamento entre itens gerais (ancestrais) e tipos mais
 específicos (descendentes) desses itens, que herdam atributos e
 métodos dos níveis superiores.
+
+Vantagens de utilizar Herança:
+
+    . Reutilização de código
+    . Organização Hierárquica
+    . Facilidade de manunteção
+    . Extensibilidade
+    . Suporte a polimorfismo
+
