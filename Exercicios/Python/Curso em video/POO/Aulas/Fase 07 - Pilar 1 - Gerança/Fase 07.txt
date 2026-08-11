@@ -12,4 +12,18 @@ Vantagens de utilizar Herança:
     . Extensibilidade
     . Suporte a polimorfismo
 
-... Aguardando proxima aula
+
+A Classe Mãe pode ser chamada de:
+    Superclasse
+    Classe Base
+    Ancestral
+    Generalizada
+
+A Classe Filha pode ser chamada de:
+    Classe Derivada
+    Descendente
+    Subclasse
+    Especializada
+
+Herança é um relacionamento do tipo "é UM", ou seja, um objeto da Subclasse
+"é UM" objeto da Superclasse.
