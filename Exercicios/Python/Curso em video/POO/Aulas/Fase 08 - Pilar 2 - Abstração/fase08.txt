@@ -1,0 +1,29 @@
+Abstração - Prática de ignorar o irrelevante e se focar estritamente no essencial.
+
+Dessa maneira, o usuário não precisa saber detalhes da implementação, e passa
+a se focar apenas na interface pública que está disponível.
+
+Existe a abstração de dados, que acontece quando ignoramos informações
+desnecessárias para o escopo do projeto.
+
+Existe a abstração de processos, quando não precisamos saber como um método faz
+seu trabalho, apenas que ele existe pela interface.
+
+Principais Vantagens da abstração:
+    Maior Legibilidade
+    Padronização
+    Simplificação
+    Segurança
+
+
+Classe Abstrata: Não vai servir para gerar objetos, apenas como base para que
+as subclasses gerem objetos. Essa classe nunca será instanciada.
+
+A Classe Abstrata também pode ter métodos abstratos, que são vazios na Superclasse.
+Eles servem como obrigação para que os objetos das subclasses criem seus métodos.
+Ao definir um conjunto de métodos abstratos, dizemos que estamos criando
+a interface pública da classe.
+Uma classe abstrata pode ter métodos concretos, se funcionarem da mesma maneira
+para todas as subclasses.
+
+As subclasses de uma Abstrata podem ser chamadas de Especializadas.
