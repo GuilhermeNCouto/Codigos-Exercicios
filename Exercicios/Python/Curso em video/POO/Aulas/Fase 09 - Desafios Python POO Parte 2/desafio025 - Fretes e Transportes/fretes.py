@@ -26,9 +26,11 @@ class Transporte(ABC):
         pass
     
 class Moto(Transporte):
+    
+    fator = 0.5
+    
     def __init__(self, distancia):
         super().__init__(distancia)
-        self.fator = 0.5
 
     def calc_frete(self):
         self.frete = self.distancia * self.fator
@@ -36,9 +38,10 @@ class Moto(Transporte):
     
 class Caminhao(Transporte):
 
+    fator = 1.2
+
     def __init__(self, distancia):
         super().__init__(distancia)
-        self.fator = 1.2
 
     def calc_frete(self):
         if self.distancia < 50:
@@ -48,9 +51,10 @@ class Caminhao(Transporte):
     
 class Drone(Transporte):
 
+    fator = 9.5
+
     def __init__(self, distancia):
         super().__init__(distancia)
-        self.fator = 9.5
 
     def calc_frete(self):
         if self.distancia > 10:

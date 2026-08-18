@@ -34,8 +34,9 @@ from rich.text import Text
 
 
 class Funcionario(ABC):
+    
     sal_min = 1612
-    inss = 7.5
+    desconto_inss = 7.5
 
     def __init__(self, nome):
         self.nome = nome
@@ -71,21 +72,21 @@ class Funcionario(ABC):
 
 
 class Horista(Funcionario):
-    def __init__(self, nome, valor_hora, horas_trabalhadas):
+    def __init__(self, nome, valor_hora=7.37, horas_trabalhadas=220):
         super().__init__(nome)
         self.valor_hora = valor_hora
         self.horas_trabalhadas = horas_trabalhadas
 
     def calc_sal(self):
         self.salario_bruto = self.valor_hora * self.horas_trabalhadas
-        self.salario_liquido = self.salario_bruto - (self.salario_bruto * (self.inss / 100))
+        self.salario_liquido = self.salario_bruto - (self.salario_bruto * (self.desconto_inss / 100))
 
 
 class Mensalista(Funcionario):
-    def __init__(self, nome, salario_mensal):
+    def __init__(self, nome, salario_bruto=Funcionario.sal_min):
         super().__init__(nome)
-        self.salario_mensal = salario_mensal
+        self.salario_bruto = salario_bruto
 
     def calc_sal(self):
-        self.salario_bruto = self.salario_mensal
-        self.salario_liquido = self.salario_bruto - (self.salario_bruto * (self.inss / 100))
+        self.salario_liquido = self.salario_bruto - (self.salario_bruto * (self.desconto_inss / 100))
+        self.salario_liquido = self.salario_bruto - (self.salario_bruto * (self.desconto_inss / 100))
