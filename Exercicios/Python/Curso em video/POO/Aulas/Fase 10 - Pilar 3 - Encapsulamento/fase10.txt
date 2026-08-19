@@ -1,0 +1,9 @@
+Encapsulamento: Visa manter a integridade do sistema, protegendo o
+estado interno do objeto contra interferência externa não regulamentada.
+
+Principais vantagens:
+
+    .Segurança e controle
+    .Facilidade de manutenção
+    .Flexibilidade e reutilização
+    .Redução de efeitos colaterais.

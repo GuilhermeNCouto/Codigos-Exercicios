@@ -8,7 +8,7 @@ Vantagens de utilizar Herança:
 
     . Reutilização de código
     . Organização Hierárquica
-    . Facilidade de manunteção
+    . Facilidade de manutenção
     . Extensibilidade
     . Suporte a polimorfismo
 
