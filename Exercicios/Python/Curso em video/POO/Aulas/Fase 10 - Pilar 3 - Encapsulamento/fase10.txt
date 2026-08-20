@@ -9,37 +9,35 @@ Principais vantagens:
     .Redução de efeitos colaterais
 
 
-Para realizar essa proteção, precisamos entender:
-
-    .Visibilidade dos atributos - Existem 3 tipos de visibilidade para
-    atributos em linguagens POO:
-
-        + Public (Público): Acesso Livre
-            Qualquer parte do programa (seja dentro da própria classe, nas
-            subclasses ou no código externo) pode ver e modificar o dado.
-            É a porta aberta.
-
-            No Python: É o padrão. Escrito com o nome normal (ex: self.vida).
 
 
-        # Protected (Protegido): Acesso de "Família"
-            Só pode ser acessado e modificado pela própria classe e por suas
-            classes filhas (quando você usa herança). O código externo não
-            deve mexer.
+.Visibilidade dos atributos - Existem 3 tipos de visibilidade para
+atributos em linguagens POO:
 
-            No Python: Indicado com um underline no começo (ex: self._vida).
+    + Public (Público): Acesso Livre
+        Qualquer parte do programa (seja dentro da própria classe, nas
+        subclasses ou no código externo) pode ver e modificar o dado.
+        É a porta aberta.
+
+        No Python: É o padrão. Escrito com o nome normal (ex: self.vida).
 
 
-        - Private (Privado): Acesso Totalmente Restrito
-            Apenas a própria classe onde ele foi criado tem permissão para acessar
-            ou alterar. Ele fica totalmente bloqueado para o código externo e até
-            mesmo para as classes filhas.
+    # Protected (Protegido): Acesso de "Família"
+        Só pode ser acessado e modificado pela própria classe e por suas
+        classes filhas (quando você usa herança). O código externo não
+        deve mexer.
 
-            No Python: Indicado com dois underlines no começo (ex: self.__vida).
+        No Python: Indicado com um underline no começo (ex: self._vida).
 
-        No Python, existe o Consentig Adults: No lugar de criar barreiras concretas
-        de modificadores de acesso, os desenvolvedores vão preferir estabelecer uma
-        série de convenções que indicam como o acesso a esses elementos deve ser
-        realizado.
-        
-    .Acesso aos dados protegidos
+
+    - Private (Privado): Acesso Totalmente Restrito
+        Apenas a própria classe onde ele foi criado tem permissão para acessar
+        ou alterar. Ele fica totalmente bloqueado para o código externo e até
+        mesmo para as classes filhas.
+
+        No Python: Indicado com dois underlines no começo (ex: self.__vida).
+
+    No Python, existe o Consentig Adults: No lugar de criar barreiras concretas
+    de modificadores de acesso, os desenvolvedores vão preferir estabelecer uma
+    série de convenções que indicam como o acesso a esses elementos deve ser
+    realizado.
