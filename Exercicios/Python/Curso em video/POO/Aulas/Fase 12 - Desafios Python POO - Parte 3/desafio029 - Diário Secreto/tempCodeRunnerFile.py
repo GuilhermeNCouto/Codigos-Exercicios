@@ -9,12 +9,9 @@ def main():
     
     
     d.escrever("Primeiramensagem")
-    d.escrever("Olá, mundo!")
-    d.escrever("Terceira mensagem")
-    
-    #inspect(d, private=True, methods=True)
+    #d.escrever("Olá, mundo!")
+    #d.escrever("Terceira mensagem")
+    inspect(d)
 
-    d.ler("Cafeina")
-    
 if __name__ == '__main__':
     main()
