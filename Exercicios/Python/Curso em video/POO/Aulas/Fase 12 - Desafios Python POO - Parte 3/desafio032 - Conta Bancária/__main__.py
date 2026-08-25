@@ -17,13 +17,19 @@ def main():
     conta.depositar(350.0)
 
     print("\n--- Realizando Saque ---")
-    # Não precisa passar a senha aqui, a própria classe solicita via pwinput
     conta.sacar(200.0)
 
     print("\n--- Alterando Nome ---")
     conta.nome = input("Novo nome: ")
     
     inspect(conta, private=True, methods=True)
+    
+    #cálcular 2 numeros
+    n1 = 5
+    n2 = 4
+    soma = n1 + n2
+    print(soma)
+    
     
 if __name__ == '__main__':
     main()
