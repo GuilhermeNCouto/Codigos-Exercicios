@@ -14,7 +14,20 @@ def main():
     
     #inspect(d, private=True, methods=True)
 
-    d.ler("Cafeina")
-    
+    try:
+        print(d.senha)
+    except PermissionError as e:
+        print(e)
+
+    try:
+        d.ler("Cafeina")
+    except PermissionError as e:
+        print(e)
+
+    try:
+        d.senha = "Livros"
+    except PermissionError as e:
+        print(e)
+
 if __name__ == '__main__':
     main()
