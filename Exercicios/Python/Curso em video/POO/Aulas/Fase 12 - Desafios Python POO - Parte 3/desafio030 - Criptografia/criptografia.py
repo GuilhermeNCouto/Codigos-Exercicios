@@ -7,23 +7,28 @@ Credencial
 ----------------
 + validar(chave)
 '''
-import hashlib
+from hashlib import sha256
+
 
 class Credencial:
 
-    def __init__(self, senha=""):
-        self.__hash = self.senha = senha
+    def __init__(self):
+        self.__hash = None
 
     @property
     def senha(self):
         raise PermissionError("Não é permitido recuperar a senha original!")
 
     @senha.setter
-    def senha(self, nova_senha: str):
-        self.__hash = hashlib.sha256(nova_senha.encode("utf-8")).hexdigest()
+    def senha(self, chave: str):
+        if not isinstance(chave, str) or len(chave) < 8:
+            raise ValueError("A senha deve ter no mínimo 8 caracteres!")
+        self.__hash = sha256(chave.encode("utf-8")).hexdigest()
 
-    def validar(self, chave: str) -> bool:
-        validacao = self.__hash == hashlib.sha256(chave.encode("utf-8")).hexdigest()
-        if validacao:
-            return f"Senha Confere!\n{validacao}"
-        return f"Senha Incorreta!\n{validacao}"
+    def validar(self, chave: str) -> str:
+        chave_hash = sha256(chave.encode("utf-8")).hexdigest()
+        
+        if self.__hash == chave_hash:
+            return "Senha Confere!"
+            
+        return "Senha Incorreta!"

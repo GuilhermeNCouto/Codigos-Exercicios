@@ -6,10 +6,19 @@ from retangulo import Retangulo
 from rich import print, inspect
 
 def main():
-    r = Retangulo()
+    r = Retangulo(15, 15)
     
-    r.altura = 10
-    r.base = 5
+    try:
+        r.base = 25
+    except Exception as e:
+        print(f"{type(e).__name__}: {e}")
+
+    try:
+        r.altura = -5
+    except Exception as e:
+        print(f"{type(e).__name__}: {e}")
+    
+    
     
     r.medidas = (9,3)
     
