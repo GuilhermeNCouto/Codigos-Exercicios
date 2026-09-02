@@ -22,7 +22,8 @@ def main():
     print("\n--- Alterando Nome ---")
     conta.nome = input("Novo nome: ")
     
-    inspect(conta, private=True, methods=True)
+    print(conta)
+    #inspect(conta, private=True, methods=True)
     
     
     
