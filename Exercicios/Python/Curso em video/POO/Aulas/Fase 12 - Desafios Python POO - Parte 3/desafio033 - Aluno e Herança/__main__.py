@@ -5,9 +5,7 @@ def main():
 
     a1 = Aluno("Guilherme", 2002, "ADS")
 
-    a1.add_curso("MKT")
-
-    a1.curso = "MKT"
+    print(a1.idade)
 
     inspect(a1, private=True, methods=True)
     

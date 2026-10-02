@@ -31,6 +31,7 @@ class Pessoa(ABC):
 
     def __init__(self, nome, nascimento):
         self._nome = nome
+        self._nascimento = None
         self.nascimento = nascimento
         
     @property
@@ -54,10 +55,11 @@ class Pessoa(ABC):
 
 class Aluno(Pessoa):
 
+    cursos_oficiais = ["ADM", "ADS", "ENG", "CONT"]
+
     def __init__(self, nome, nascimento, curso):
         super().__init__(nome, nascimento)
-        self.cursos_oficiais = ["ADM", "ADS", "ENG", "CONT"]
-        self.curso = curso
+        self._curso = curso
 
 
     @property
@@ -71,6 +73,9 @@ class Aluno(Pessoa):
         self._curso = valor
         
     def add_curso(self, curso):
+        curso = curso.strip().upper()
         if curso in self.cursos_oficiais:
             raise ValueError(f"{curso} já é um curso oficial.")
+        if len(curso) < 3 or len(curso) > 5:
+            raise ValueError(f"{curso} não é um curso válido.")+
         self.cursos_oficiais.append(curso.upper())
