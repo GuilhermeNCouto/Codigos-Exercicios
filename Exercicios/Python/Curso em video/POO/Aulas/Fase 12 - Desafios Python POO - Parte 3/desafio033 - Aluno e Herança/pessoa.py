@@ -77,5 +77,5 @@ class Aluno(Pessoa):
         if curso in self.cursos_oficiais:
             raise ValueError(f"{curso} já é um curso oficial.")
         if len(curso) < 3 or len(curso) > 5:
-            raise ValueError(f"{curso} não é um curso válido.")+
+            raise ValueError(f"{curso} não é um curso válido.")
         self.cursos_oficiais.append(curso.upper())
