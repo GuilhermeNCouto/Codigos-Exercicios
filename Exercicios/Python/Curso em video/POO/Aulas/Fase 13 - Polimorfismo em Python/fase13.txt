@@ -1,0 +1,18 @@
+Polimorfismo -> "Várias Formas": Propriedade ou estado
+daquilo que se apresenta e/ou se comporta de várias
+formas diferentes.
+
+"Um único nome, mas comportamentos diferentes."
+
+O Python é uma das linguagens que visa permitir o
+polimorfismo sem a necessidade de herança.
+
+Polimorfismo de Inclusão (Override): Quando um método do filho sobrescreve
+um método da mãe (mesmo nome e mesmos parâmetros, em classes diferentes).
+
+Polimorfismo de Sobrecarga (Overload / Ad-hoc): Quando métodos têm o mesmo
+nome, mas parâmetros diferentes na mesma classe.
+
+Outros tipos que o Python não suporta:
+Polimorfismo de Coerção (AD-Hoc Overriding)
+Polimorfismo Paramétrico (Template / Generic)

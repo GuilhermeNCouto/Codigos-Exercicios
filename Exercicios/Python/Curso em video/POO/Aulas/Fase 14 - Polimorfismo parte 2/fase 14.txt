@@ -1,0 +1,7 @@
+Sobrecarga de Método: Polimorfismo em tempo de compilação (ad-hoc).
+O mesmo nome executa lógicas diferentes conforme o número/tipo de
+argumentos recebidos. (Python não tem nativo, resolve dinamicamente).
+
+Sobrecarga de Operadores: Polimorfismo sintático. O mesmo operador
+(+, *) assume comportamentos polimórficos dependendo da classe dos
+operandos envolvidos (via métodos mágicos como __add__).
