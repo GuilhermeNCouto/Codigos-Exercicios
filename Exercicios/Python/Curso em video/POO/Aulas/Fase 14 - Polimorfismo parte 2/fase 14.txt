@@ -5,3 +5,17 @@ argumentos recebidos. (Python não tem nativo, resolve dinamicamente).
 Sobrecarga de Operadores: Polimorfismo sintático. O mesmo operador
 (+, *) assume comportamentos polimórficos dependendo da classe dos
 operandos envolvidos (via métodos mágicos como __add__).
+
+Sobrecarga de operadores
+Métodos Mágicos:
+
+Equal to                    p1 == p2        p1.__eq__(p2)
+Not equal to                p1 != p2        p1.__ne__(p2)
+Less than                   p1 < p2         p1__lt__(p2)
+Less than or equal to       p1 <= p2        p1__le__(p2)
+Greater than                p1 > p2         p1.__gt__(p2)
+Greater than or equal to    p1 >= p2        p1.__ge__(p2)
+In-place Addition           p2 += p2        p1.__iadd__(p2)
+In-place Subtract           p1 -= p2        p1.__isub__(p2)
+
+"Duck Typing":

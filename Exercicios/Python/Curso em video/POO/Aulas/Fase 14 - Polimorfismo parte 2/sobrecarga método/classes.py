@@ -21,3 +21,7 @@ class Analisador:
     @analisar.register
     def _(self, valor:tuple|list|dict):
         print(f"{valor} é uma coleção de dados")
+
+    @analisar.register
+    def _(self, valor:bool):
+        print(f"{valor} é booleano")
