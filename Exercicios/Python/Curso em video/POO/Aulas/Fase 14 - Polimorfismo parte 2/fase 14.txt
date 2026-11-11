@@ -18,4 +18,4 @@ Greater than or equal to    p1 >= p2        p1.__ge__(p2)
 In-place Addition           p2 += p2        p1.__iadd__(p2)
 In-place Subtract           p1 -= p2        p1.__isub__(p2)
 
-"Duck Typing":
+"Duck Typing" - método polimórfico: Não importa o tipo de um objeto, o que importa é se ele sabe fazer alguma coisa
