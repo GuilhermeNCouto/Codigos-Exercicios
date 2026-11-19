@@ -1,6 +1,7 @@
 from classes import *
 
 def main():
-    pass
+
+    finalizar_compra(Pix())
 if __name__ == '__main__':
     main()

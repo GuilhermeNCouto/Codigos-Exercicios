@@ -1,18 +1,22 @@
 from classes import *
-'''
-Diagrama de classe:
-Funcionário {abstract}
-----------------
-+ nome
-- salario
-----------------
-+ calcular_bonus()
+from rich import inspect
 
-Crie Gerente, Designer e Desenvolvedor (subclasses de Funcionário).
-Vão possuir um % de bônus diferente, sendo 10% para dev, 8% para designer
-e 15% para gerente.
-'''
 def main():
-    pass
+
+    dev = Desenvolvedor("Guigas", 3000)
+    #dev.salario = 2500
+    print(dev)
+
+    des = Designer("Matheus", 2000)
+    print(des)
+
+    ger = Gerente("Thau", 5000)
+    print(ger)
+
+    inspect(ger, methods=True, private=True)
+    inspect(des, methods=True, private=True)
+    inspect(dev, methods=True , private=True)
+
+
 if __name__ == '__main__':
     main()
