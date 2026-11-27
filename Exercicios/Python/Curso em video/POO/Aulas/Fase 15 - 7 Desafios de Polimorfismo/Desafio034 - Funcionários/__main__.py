@@ -1,22 +1,20 @@
 from classes import *
-from rich import inspect
 
 def main():
 
-    dev = Desenvolvedor("Guigas", 3000)
-    #dev.salario = 2500
-    print(dev)
+    funcionarios = [
+        Desenvolvedor("Guigas", 3000),
+        Designer("Matheus", 2000),
+        Gerente("Thau", 5000)
+        ]
 
-    des = Designer("Matheus", 2000)
-    print(des)
+    try:
+        funcionarios[0].salario = 2500
+    except Exception as erro:
+        print(f"ERRO: {erro}")
 
-    ger = Gerente("Thau", 5000)
-    print(ger)
-
-    inspect(ger, methods=True, private=True)
-    inspect(des, methods=True, private=True)
-    inspect(dev, methods=True , private=True)
-
+    for funcionario in funcionarios:
+        print(funcionario)
 
 if __name__ == '__main__':
     main()
